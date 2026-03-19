@@ -4,7 +4,7 @@ let arr = [
         fullName: 'Chennai Super Kings',
         primary: 'yellow',
         secondary: 'blue',
-        captain: 'Ruturaj Gaikwad',
+        captain: 'MS Dhoni',
         trophies: 5
     },
     {
@@ -52,8 +52,8 @@ let arr = [
         fullName: 'Royal Challengers Bangalore',
         primary: 'red',
         secondary: 'black',
-        captain: 'Faf du Plessis',
-        trophies: 0
+        captain: 'Virat Kohli',
+        trophies: 1
     },
     {
         team: 'PBKS',
@@ -74,7 +74,7 @@ let arr = [
     {
         team: 'LSG',
         fullName: 'Lucknow Super Giants',
-        primary: 'light blue',
+        primary: 'lightblue',
         secondary: 'orange',
         captain: 'KL Rahul',
         trophies: 0
@@ -88,25 +88,16 @@ let main = document.querySelector("main")
 
 btn.addEventListener("click", function () {
     let winner = Math.floor(Math.random() * arr.length)
-    // console.log(arr[winner].team);
     h1.innerHTML = arr[winner].team
     h1.style.backgroundColor = arr[winner].secondary
     main.style.backgroundColor = arr[winner].primary
-    
-})
-
-btn.addEventListener("click", function () {
-    let winner = Math.floor(Math.random() * arr.length)
 
     let data = arr[winner]
 
     h2.innerHTML = `
-        ${data.team} <br>
         ${data.fullName} <br>
         Captain: ${data.captain} <br>
         Trophies: ${data.trophies}
     `
 
 })
-
-
