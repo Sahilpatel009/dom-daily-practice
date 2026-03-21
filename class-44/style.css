@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+button {
+    color: white;
+    padding: 10px 20px;
+    background-color: crimson;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+
+}
+
+button:active {
+    scale: 0.95;
+}
