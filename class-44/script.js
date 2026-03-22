@@ -62,4 +62,14 @@ btn.addEventListener('click', function () {
         }, 300)
     })
 
- 
+    // 🖱 Hover
+    div.addEventListener('mouseenter', function () {
+        div.style.transform = baseTransform + ' scale(1.5)'
+    })
+
+    div.addEventListener('mouseleave', function () {
+        div.style.transform = baseTransform
+    })
+
+    main.appendChild(div)
+})
