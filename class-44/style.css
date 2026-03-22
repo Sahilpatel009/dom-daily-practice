@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 html,
@@ -11,26 +12,33 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
-
+div {
+  cursor: pointer;
+}   
 main {
+    /* position: relative; */
     height: 100%;
     width: 100%;
     display: flex;
     background-color: black;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
+    justify-content: center;
     padding: 50px;
-    gap: 30px;
+    /* gap: 30px; */
 }
 
 button {
+    font-size: 25px;
     color: white;
-    padding: 10px 20px;
+    padding: 20px 30px;
     background-color: crimson;
     border: none;
     border-radius: 5px;
     font-weight: 600;
-
+    position: relative;
+    z-index: 9;
+    cursor: pointer;
 }
 
 button:active {
