@@ -70,6 +70,5 @@ btn.addEventListener('click', function () {
     div.addEventListener('mouseleave', function () {
         div.style.transform = baseTransform
     })
-
     main.appendChild(div)
 })
