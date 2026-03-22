@@ -40,3 +40,14 @@ btn.addEventListener('click', function () {
         { transform: baseTransform + ' scale(0)' },
         { transform: baseTransform + ' scale(1)' }
     ], { duration: 400, fill: 'forwards' })
+
+    // 🧲 Moving shapes
+    let moveInterval = setInterval(() => {
+        let newX = Math.random() * 100
+        let newY = Math.random() * 100
+
+        div.style.left = newX + '%'
+        div.style.top = newY + '%'
+    }, 1000)
+
+  
