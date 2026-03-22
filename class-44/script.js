@@ -50,4 +50,16 @@ btn.addEventListener('click', function () {
         div.style.top = newY + '%'
     }, 1000)
 
-  
+    // 💥 Click destroy animation
+    div.addEventListener('click', function () {
+        div.style.transform = baseTransform + ' scale(2)'
+        div.style.opacity = '0'
+
+        clearInterval(moveInterval)
+
+        setTimeout(() => {
+            div.remove()
+        }, 300)
+    })
+
+ 
