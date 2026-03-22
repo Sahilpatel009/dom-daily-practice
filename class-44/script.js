@@ -35,4 +35,8 @@ btn.addEventListener('click', function () {
     }
     else if (shape === 7) div.style.clipPath = 'polygon(50% 0%, 60% 35%, 100% 35%, 65% 55%, 80% 100%, 50% 70%, 20% 100%, 35% 55%, 0% 35%, 40% 35%)'
 
-   
+    // 🎬 Initial animation
+    div.animate([
+        { transform: baseTransform + ' scale(0)' },
+        { transform: baseTransform + ' scale(1)' }
+    ], { duration: 400, fill: 'forwards' })
