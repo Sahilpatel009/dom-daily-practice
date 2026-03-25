@@ -4,6 +4,7 @@
     box-sizing: border-box;
     overflow: hidden;
 }
+
 html,
 body {
     height: 100%;
@@ -11,9 +12,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
 }
+
 div {
-  cursor: pointer;
-}   
+    cursor: pointer;
+}
+
 main {
     height: 100%;
     width: 100%;
@@ -23,6 +26,7 @@ main {
     justify-content: center;
     padding: 50px;
 }
+
 button {
     font-size: 25px;
     color: white;
@@ -35,6 +39,7 @@ button {
     z-index: 9;
     cursor: pointer;
 }
+
 button:active {
     scale: 0.95;
 }
