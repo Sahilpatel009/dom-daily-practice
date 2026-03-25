@@ -35,13 +35,13 @@ btn.addEventListener('click', function () {
     }
     else if (shape === 7) div.style.clipPath = 'polygon(50% 0%, 60% 35%, 100% 35%, 65% 55%, 80% 100%, 50% 70%, 20% 100%, 35% 55%, 0% 35%, 40% 35%)'
 
-    // 🎬 Initial animation
+    // Initial animation
     div.animate([
         { transform: baseTransform + ' scale(0)' },
         { transform: baseTransform + ' scale(1)' }
     ], { duration: 400, fill: 'forwards' })
 
-    // 🧲 Moving shapes
+    //  Moving shapes
     let moveInterval = setInterval(() => {
         let newX = Math.random() * 100
         let newY = Math.random() * 100
@@ -50,7 +50,7 @@ btn.addEventListener('click', function () {
         div.style.top = newY + '%'
     }, 1000)
 
-    // 💥 Click destroy animation
+    //  Click destroy animation
     div.addEventListener('click', function () {
         div.style.transform = baseTransform + ' scale(2)'
         div.style.opacity = '0'
@@ -62,7 +62,7 @@ btn.addEventListener('click', function () {
         }, 300)
     })
 
-    // 🖱 Hover
+    // Hover
     div.addEventListener('mouseenter', function () {
         div.style.transform = baseTransform + ' scale(1.5)'
     })
@@ -71,4 +71,4 @@ btn.addEventListener('click', function () {
         div.style.transform = baseTransform
     })
     main.appendChild(div)
-})
+}) 

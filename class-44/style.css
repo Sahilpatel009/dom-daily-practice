@@ -4,7 +4,6 @@
     box-sizing: border-box;
     overflow: hidden;
 }
-
 html,
 body {
     height: 100%;
@@ -16,18 +15,14 @@ div {
   cursor: pointer;
 }   
 main {
-    /* position: relative; */
     height: 100%;
     width: 100%;
     display: flex;
     background-color: black;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     padding: 50px;
-    /* gap: 30px; */
 }
-
 button {
     font-size: 25px;
     color: white;
@@ -40,7 +35,6 @@ button {
     z-index: 9;
     cursor: pointer;
 }
-
 button:active {
     scale: 0.95;
 }
