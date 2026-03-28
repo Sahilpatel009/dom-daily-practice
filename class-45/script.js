@@ -17,4 +17,4 @@ btn.addEventListener('click', function () {
         btn.innerHTML = 'Downloaded'
         btn.style.opacity = 0.5
     }, num * 100);
-})
+}) 
