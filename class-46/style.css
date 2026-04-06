@@ -31,7 +31,10 @@ main {
     background-color: white;
     text-align: center;
 }
-
+.card div {
+    position: relative;
+    overflow: hidden;
+}
 .card img {
     border-radius: 10px;
     width: 100%;
