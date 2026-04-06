@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    background-color: rgb(111, 197, 255);
+
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+#card img {
+    border-radius: 10px;
+    background-size: contain;
+    width: 250px;
+    height: 250px;
+}
+
+#card h2 {
+    color: red;
+    margin: 5px 0px 15px 0px;
+}
+
+#card .button button {
+    background-color: gainsboro;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+}
+
+#card .button button:active {
+    scale: 0.9;
+}
